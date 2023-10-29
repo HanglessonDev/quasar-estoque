@@ -58,7 +58,7 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16'
       },
 
-      vueRouterMode: 'history' // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -67,7 +67,10 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {
+        SUPABASE_URL: 'https://dxawjeeudswrgpwxvtjq.supabase.co',
+        SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR4YXdqZWV1ZHN3cmdwd3h2dGpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTg0NTg1NzEsImV4cCI6MjAxNDAzNDU3MX0.TIHE3iXIi-Fqe4Kh1gfF8K-jlprdk6GDidukNduTuRg'
+      }
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
